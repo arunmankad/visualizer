@@ -1,5 +1,14 @@
+/* body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+	font-size:15px;
+} */
+/* .nodeNameBase{
+  fill: yellow;
+} */
 .App {
-  text-align: center;
+  min-width:100%;
+  min-height: 100%;
 }
 
 .App-logo {
@@ -13,7 +22,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,11 +31,96 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn-controls {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #FC5C7D;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* background-color: #4CAF50;
+  
+  font-size: 16px; */
+  cursor: pointer;
+  /* text-align: center; */
+}
+.demo-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background: #7F5A83;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #6A82FB, #FC5C7D);   Chrome 10-25, Safari 5.1-6 */
+  /* ßbackground: linear-gradient(to top, #6A82FB, #FC5C7D);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #380036, #0CBABA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #380036, #0CBABA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.column-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background: #DDDDDD;  /* fallback for old browsers */
+  opacity:0.5;
+  /* background: -webkit-linear-gradient(to top, #380036, #0CBABA);  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to top, #380036, #0CBABA); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  overflow-y: scroll;
+  background: rgba(0,0,0,0.4)
+}
+.prop-container {
+  padding: 2px 5px;
+  margin: 15px 10px;
+}
+.column-right {
+  height: 100%;
+  width: 100%;
+}
+.tree-container {
+  height: 100%;
+  background: #7F5A83;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #6A82FB, #FC5C7D);   Chrome 10-25, Safari 5.1-6 */
+  /* ßbackground: linear-gradient(to top, #6A82FB, #FC5C7D);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #380036, #0CBABA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #380036, #0CBABA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-pbi-box {
+  /* flex-basis: 27%; */
+  flex: 1 1 20%; /* or 1 0 100px, and no more need in min-width at all */
+  max-width: 100%;
+  min-width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* transition: 0.3s; */
+  background: #3aafa9;
+  padding: 10px;
+  margin: 5px;
+  position: absolute;
+  border-radius: 3px;
+  transition: 0.2s all ease;
+  color: white;
+  /* overflow: scroll; */
+  z-index: 10;
+}
+
 
 @keyframes App-logo-spin {
   from {
